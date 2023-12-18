@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dynamic-SVG-Color-Changer</title>
+</head>
+<body>
+  <svg id="mySvg"  height="105px" width="105px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3.2 -3.2 38.40 38.40" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g id="info"> <g> <path style="fill:#030104;" d="M10,16c1.105,0,2,0.895,2,2v8c0,1.105-0.895,2-2,2H8v4h16v-4h-1.992c-1.102,0-2-0.895-2-2L20,12H8 v4H10z"></path> <circle id="myCircle" cx="16" cy="4" r="4"></circle> </g> </g> </g> </g></svg>
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function () {
+ 
+  var circle = document.getElementById('myCircle');
+
+  
+  var colors = ['red', 'blue', 'orange'];
+
+  
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  circle.setAttribute('fill', randomColor);
+  circle.setAttribute('stroke', randomColor);
+});
+</script>
+
+</body>
+</html>
